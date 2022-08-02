@@ -1,13 +1,18 @@
+import Image from 'next/image'
+
 export default {
-  github: 'https://github.com/shuding/nextra',
-  docsRepositoryBase: 'https://github.com/shuding/nextra/blob/master',
-  titleSuffix: ' – Nextra',
+  github: 'https://github.com/raphaelluethy/rvgs-docs',
+  docsRepositoryBase: 'https://github.com/raphaelluethy/rvgs-docs',
+  titleSuffix: ' – rvgs Docs',
   logo: (
     <>
-      <span className="mr-2 font-extrabold hidden md:inline">Nextra</span>
-      <span className="text-gray-600 font-normal hidden md:inline">
-        The Next.js Static Site Generator
-      </span>
+      <Image
+        src="/logo_bg_rounded.png"
+        alt="rvgs Logo"
+        width={25}
+        height={25}
+      />
+      <span className="ml-1">| rvgs Docs</span>
     </>
   ),
   head: (
@@ -28,13 +33,13 @@ export default {
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="/apple-icon-180x180.png"
+        href="/apple-touch-icon.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="192x192"
-        href="/android-icon-192x192.png"
+        href="/android-chrome-192x192.png"
       />
       <link
         rel="icon"
@@ -62,6 +67,10 @@ export default {
   nextLinks: true,
   footer: true,
   footerEditLink: 'Edit this page on GitHub',
-  footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
-  unstable_faviconGlyph: '👋',
+  footerText: (
+    <>
+      MIT {new Date().getFullYear()} ©{' '}
+      <a href="https://raphaelluethy.ch">raphaelluethy</a>.
+    </>
+  ),
 }
