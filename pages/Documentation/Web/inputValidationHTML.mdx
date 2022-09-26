@@ -1,0 +1,26 @@
+# Input Validation with HTML
+
+HTML has an interesting way to make user-input easier:
+
+```html
+<form>
+  <label for="input1">text, search </label>
+  <input id="input1" type="text" pattern="[a-z]*" /> <label>list </label>
+  <input list="inputs" /> <label>email </label> <input type="email" />
+  <label>url </label> <input type="url" /> <label>tel </label>
+  <input type="tel" /> <label>number </label> <input type="number" />
+  <label>date </label> <input type="date" /> <label>datetime-local</label>
+  <input type="datetime-local" /> <label>time </label> <input type="time" />
+  <label>week </label> <input type="week" /> <label>month </label>
+  <input type="month" /> <label>color </label> <input type="color" />
+</form>
+radio, checkbox, range
+
+<datalist id="inputs">
+  <option value="a aa aaa aaaa"></option>
+  <option value="b bb bbb bbbb"></option>
+  <option value="c cc ccc cccc"></option>
+</datalist>
+```
+
+For the HTML `form` tag, there exists multiple `type` tags, which add additional functionality and styling to the `input field`.
