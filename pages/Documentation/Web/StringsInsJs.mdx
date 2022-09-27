@@ -1,0 +1,49 @@
+# How to create a string in JavaScript
+
+## Double Quotes
+
+```js
+const doubleQuotes = 'Hello World'
+```
+
+## Single Quotes
+
+```js
+const singleQuotes = 'Hello World'
+```
+
+## Backtick Quotes
+
+You can declare normal strings:
+
+```js
+const backticks = `Hello World`
+```
+
+### Inline values
+
+You can also add values in place with `${}`
+
+```js
+const one = 1
+const withInlineValues = `The number one can be written as ${one}`
+// -> The number one can be written as 1
+```
+
+### Multiline strings
+
+It also allows multiline strings:
+
+```js
+const validString = `Sometimes I have
+a weird issue where
+I want to format strings on
+multiple lines, e.g. for GraphQL.`
+```
+
+## Other facts
+
+### Escape special characterss
+
+Some special character you have to escape, for this you use the backslash `\`.
+To escape a backslash you use 2 of them: `\\`.
